@@ -1,4 +1,4 @@
-package com.example.calendarcardsample;
+package com.wt.calendarcardsample;
 
 import android.app.Activity;
 import android.os.Bundle;

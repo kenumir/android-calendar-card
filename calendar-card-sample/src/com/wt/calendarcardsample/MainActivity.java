@@ -1,4 +1,6 @@
-package com.example.calendarcardsample;
+package com.wt.calendarcardsample;
+
+import com.example.calendarcardsample.R;
 
 import android.app.Activity;
 import android.content.Intent;

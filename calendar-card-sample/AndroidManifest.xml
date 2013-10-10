@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.calendarcardsample.MainActivity"
+            android:name="com.wt.calendarcardsample.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.calendarcardsample.Sample1" />
-        <activity android:name="com.example.calendarcardsample.Sample2" />
+        <activity android:name="com.wt.calendarcardsample.Sample1" />
+        <activity android:name="com.wt.calendarcardsample.Sample2" />
     </application>
 
 </manifest>
