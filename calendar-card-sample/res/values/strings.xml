@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">calendar card sample</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Calendar Card Sample</string>
+    <string name="card">Calendar Card</string>
+    <string name="card_pager">Calendar Card Pager</string>
+
+</resources>
