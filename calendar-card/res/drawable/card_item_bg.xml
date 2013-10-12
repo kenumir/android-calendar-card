@@ -7,7 +7,7 @@
         </shape>
     </item>
     
-    <item android:state_activated="true" android:state_enabled="true">
+    <item android:state_checked="true" android:state_enabled="true">
         <shape>
             <solid android:color="#77DBDBDB"/>
         </shape>

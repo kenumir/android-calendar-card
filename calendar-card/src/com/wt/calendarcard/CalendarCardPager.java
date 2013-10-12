@@ -7,6 +7,11 @@ import android.util.AttributeSet;
 public class CalendarCardPager extends ViewPager {
 	
 	private CardPagerAdapter mCardPagerAdapter;
+	
+	public CalendarCardPager(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs);
+		init(context);
+	}
 
 	public CalendarCardPager(Context context, AttributeSet attrs) {
 		super(context, attrs);

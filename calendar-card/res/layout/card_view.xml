@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    style="@style/CalendarCard.Root">
     
     <TextView 
         style="@style/CalendarCard.Title"
@@ -12,13 +13,12 @@
         android:layout_alignParentLeft="true" />
     
     <LinearLayout 
+        style="@style/CalendarCard.Days"
         android:id="@+id/cardDays"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/cardTitle"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_below="@+id/cardTitle">
         
         <TextView 
 	        android:id="@+id/cardDay1"
@@ -70,17 +70,28 @@
 	        style="@style/CalendarCard.Day" />
         
     </LinearLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/cardDays">
 
-    <GridView
-        style="@style/CalendarCard.Grid"
-        android:id="@+id/cardGrid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:numColumns="7"
-        android:layout_below="@+id/cardDays"
-		android:choiceMode="singleChoice"
-        android:listSelector="#00000000"
-        android:cacheColorHint="#00000000" />
+	    <LinearLayout
+	        style="@style/CalendarCard.Grid"
+	        android:id="@+id/cardGrid"
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        <include layout="@layout/card_row"/>
+	        
+	    </LinearLayout>
+    
+    </ScrollView>
 
 </RelativeLayout>

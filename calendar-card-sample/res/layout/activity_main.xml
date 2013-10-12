@@ -19,21 +19,21 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="27dp"
-        android:text="@string/card"
-        android:onClick="handleSample1" />
+        android:onClick="handleSample1"
+        android:text="@string/card" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/button1"
-        android:text="@string/card_pager"
-        android:onClick="handleSample2" />
+        android:onClick="handleSample2"
+        android:text="@string/card_pager" />
 
 </RelativeLayout>

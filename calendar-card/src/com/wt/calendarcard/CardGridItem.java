@@ -1,13 +1,13 @@
 package com.wt.calendarcard;
 
-import java.util.Date;
+import java.util.Calendar;
 
 public class CardGridItem {
 
 	private Integer dayOfMonth;
 	private Object data;
 	private boolean enabled = true;
-	private Date date;
+	private Calendar date;
 	
 	public CardGridItem(Integer dom) { 
 		setDayOfMonth(dom);
@@ -40,11 +40,11 @@ public class CardGridItem {
 		return this;
 	}
 
-	public Date getDate() {
+	public Calendar getDate() {
 		return date;
 	}
 
-	public CardGridItem setDate(Date date) {
+	public CardGridItem setDate(Calendar date) {
 		this.date = date;
 		return this;
 	}
