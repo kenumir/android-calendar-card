@@ -15,5 +15,5 @@ Simple and easy to modify
 
 [1]: https://github.com/kenumir/android-calendar-card/raw/master/calendar-card-sample/_work/device-2013-10-12-151801.png
 [2]: https://github.com/kenumir/android-calendar-card/raw/master/calendar-card-sample/_work/device-2013-10-12-151717.png
-[3]: https://github.com/kenumir/android-calendar-card/raw/master/calendar-card-sample/_work/device-2013-10-12-151801_.png
+[3]: https://github.com/kenumir/android-calendar-card/raw/master/calendar-card-sample/_work/card_view_pager2.png
 [4]: https://play.google.com/store/apps/details?id=com.wt.calendarcardsample
