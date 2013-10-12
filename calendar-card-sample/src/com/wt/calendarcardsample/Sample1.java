@@ -5,7 +5,6 @@ import java.util.Locale;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -26,8 +25,6 @@ public class Sample1 extends Activity {
 		mCalendarCard.setOnCellItemClick(new OnCellItemClick() {
 			@Override
 			public void onCellClick(View v, CardGridItem item) {
-				Log.i("tests", "c=" + item);
-				
 				mTextView.setText(getResources().getString(R.string.sel_date, new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(item.getDate().getTime())));
 			}
 		});
