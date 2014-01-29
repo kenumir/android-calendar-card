@@ -127,6 +127,7 @@ public class CalendarCard extends RelativeLayout {
 		
 		int daySpacing = getDaySpacing(cal.get(Calendar.DAY_OF_WEEK));
 		
+		// TODO : wrong calculations - must be fixed
 		if (daySpacing > 0) {
 			Calendar prevMonth = Calendar.getInstance();
 			prevMonth.add(Calendar.MONTH, -1);
