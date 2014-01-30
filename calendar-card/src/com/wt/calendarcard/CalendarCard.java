@@ -127,18 +127,18 @@ public class CalendarCard extends RelativeLayout {
 		
 		int daySpacing = getDaySpacing(cal.get(Calendar.DAY_OF_WEEK));
 		
-		// TODO : wrong calculations - must be fixed
+		// INFO : wrong calculations of first line - fixed
 		if (daySpacing > 0) {
-			Calendar prevMonth = Calendar.getInstance();
+			Calendar prevMonth = (Calendar)cal.clone();
 			prevMonth.add(Calendar.MONTH, -1);
-			prevMonth.set(Calendar.DAY_OF_MONTH, prevMonth.getActualMaximum(Calendar.DAY_OF_MONTH));
-			int lastDayOfPrevMonth = prevMonth.get(Calendar.DAY_OF_MONTH)+1;
-			for(int i=lastDayOfPrevMonth-daySpacing+1; i<lastDayOfPrevMonth+1; i++) {
+			prevMonth.set(Calendar.DAY_OF_MONTH, prevMonth.getActualMaximum(Calendar.DAY_OF_MONTH) - daySpacing + 1);
+			for(int i=0; i<daySpacing; i++) {
 				CheckableLayout cell = cells.get(counter);
-				cell.setTag(new CardGridItem(i).setEnabled(false));
+				cell.setTag(new CardGridItem(Integer.valueOf(prevMonth.get(Calendar.DAY_OF_MONTH))).setEnabled(false));
 				cell.setEnabled(false);
 				(mOnItemRender == null ? mOnItemRenderDefault : mOnItemRender).onRender(cell, (CardGridItem)cell.getTag());
 				counter++;
+				prevMonth.add(Calendar.DAY_OF_MONTH, 1);
 			}
 		}
 		
