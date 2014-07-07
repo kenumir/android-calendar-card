@@ -11,6 +11,7 @@ import android.view.View;
 public class CardPagerAdapter extends PagerAdapter {
 	
 	private Context mContext;
+	private OnCellItemClick defaultOnCellItemClick;
 	
 	public CardPagerAdapter(Context ctx) {
 		mContext = ctx;
@@ -23,6 +24,8 @@ public class CardPagerAdapter extends PagerAdapter {
 		CalendarCard card = new CalendarCard(mContext);
 		card.setDateDisplay(cal);
 		card.notifyChanges();
+		if (card.getOnCellItemClick() == null)
+			card.setOnCellItemClick(defaultOnCellItemClick);
 		
 		((ViewPager) collection).addView(card,0);
 		
@@ -52,6 +55,14 @@ public class CardPagerAdapter extends PagerAdapter {
 	public int getCount() {
 		// TODO almoast ifinite ;-)
 		return Integer.MAX_VALUE;
+	}
+
+	public OnCellItemClick getDefaultOnCellItemClick() {
+		return defaultOnCellItemClick;
+	}
+
+	public void setDefaultOnCellItemClick(OnCellItemClick defaultOnCellItemClick) {
+		this.defaultOnCellItemClick = defaultOnCellItemClick;
 	}
 
 }
