@@ -1,7 +1,7 @@
 android-calendar-card ([Google Play Demo][4])
 =====================
 
-Android calendar view (lke card)
+Android calendar view (like card)
 Simple and easy to modify
 
 
