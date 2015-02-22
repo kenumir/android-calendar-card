@@ -1,5 +1,7 @@
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-android--calendar--card-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1575)
 
+[![API](https://img.shields.io/badge/API-10%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=10)
+
 android-calendar-card ([Google Play Demo][4])
 =====================
 
